@@ -1,0 +1,9 @@
+.add {
+    grid-area: 4 / 1 / 7 / 3; 
+    transition: all 0.5s
+}
+
+.addOut {
+    opacity: 0;
+    grid-area: 4 / 1 / 8 / 3; 
+}

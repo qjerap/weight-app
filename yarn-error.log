@@ -1,0 +1,80 @@
+Arguments: 
+  E:\App\node\node.exe C:\Users\parej\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add echarts
+
+PATH: 
+  C:\Users\parej\bin;E:\App\Git\mingw64\bin;E:\App\Git\usr\local\bin;E:\App\Git\usr\bin;E:\App\Git\usr\bin;E:\App\Git\mingw64\bin;E:\App\Git\usr\bin;C:\Users\parej\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;E:\App\Git\cmd;E:\App\Microsoft VS Code\bin;E:\App\node;C:\Users\parej\AppData\Local\Microsoft\WindowsApps;E:\App\Microsoft VS Code\bin;C:\Users\parej\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Users\parej\AppData\Local\GitHubDesktop\bin;C:\Users\parej\AppData\Roaming\npm;C:\Program Files\heroku\bin;E:\App\Git\usr\bin\vendor_perl;E:\App\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.10.1
+
+Node version: 
+  10.12.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com registry.yarnpkg.com:443
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:57:26)
+
+npm manifest: 
+  {
+    "name": "boilerplate-react-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "author": "",
+    "license": "ISC",
+    "scripts": {
+      "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
+      "dev": "parcel src/index.html",
+      "test": "jest --watchAll",
+      "start": "node server/server.js",
+      "heroku-postbuild": "npm run dev"
+    },
+    "dependencies": {
+      "@babel/preset-env": "^7.1.0",
+      "@babel/preset-react": "^7.0.0",
+      "babel-cli": "^6.26.0",
+      "babel-core": "^7.0.0-bridge.0",
+      "babel-jest": "^23.6.0",
+      "babel-preset-env": "^1.5.2",
+      "babel-preset-react": "^6.24.1",
+      "echarts-for-react": "^2.0.15-beta.0",
+      "express": "^4.16.4",
+      "firebase": "^5.5.9",
+      "moment": "^2.22.2",
+      "normalize.css": "^8.0.0",
+      "numeral": "^2.0.6",
+      "parcel-bundler": "^1.10.3",
+      "react": "^16.6.0",
+      "react-chartist": "^0.13.1",
+      "react-dates": "^18.2.2",
+      "react-dom": "^16.6.0",
+      "react-modal": "^3.6.1",
+      "react-redux": "^5.1.1",
+      "react-router-dom": "^4.3.1",
+      "redux": "^4.0.1",
+      "redux-thunk": "^2.3.0",
+      "regenerator-runtime": "^0.12.1",
+      "sass": "^1.14.3",
+      "source-map-explorer": "^1.6.0",
+      "utils": "^0.3.1",
+      "utils.js": "^1.0.1",
+      "uuid": "^3.3.2"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.1.2",
+      "babel-plugin-react": "^1.0.0",
+      "webpack-cli": "^3.1.2",
+      "jest": "^23.6.0",
+      "live-server": "^1.2.0",
+      "webpack": "^4.23.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

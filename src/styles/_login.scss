@@ -1,0 +1,36 @@
+@import "./var";
+
+.login {
+    text-align: center;
+    grid-area: 1 / 1 / 4 / 3; 
+    background-color: #ffffff;
+    border-radius: 1%;
+    box-shadow: 0px 0px 15px -8px rgba(0,0,0,0.75);
+
+}
+
+
+.loginOut {
+    z-index: 99;
+    grid-area: 4 / 7 / 7 / 9; 
+    box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75);
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 1%;
+
+
+}
+
+.islog {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
+
+}
+.islog__top {
+    grid-row: 1 / 2;
+    background-color: $red;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700
+}

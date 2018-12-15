@@ -1,0 +1,11 @@
+.chart {
+    grid-area: 2 / 3 / 10 / -1; 
+    transition: all 0.5s;
+    
+    
+}
+
+.chartOut {
+    opacity: 0;
+    grid-area: 2 / 3 / 10 / -1; 
+}

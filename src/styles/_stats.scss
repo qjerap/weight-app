@@ -1,0 +1,10 @@
+.stats {
+    grid-column: 1 / 3;
+    transition: all 0.5s;
+}
+
+.statsOut {
+    opacity: 0;
+    grid-column: 1 / 3;
+ 
+}

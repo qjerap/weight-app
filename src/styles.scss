@@ -1,0 +1,15 @@
+@import './styles/dashboard';
+@import './styles/login';
+@import './styles/add';
+@import './styles/info';
+@import './styles/chart';
+@import './styles/stats';
+@import './styles/nav';
+@import './styles//var';
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $grey;
+}
+
+
