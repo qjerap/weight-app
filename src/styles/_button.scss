@@ -1,0 +1,13 @@
+@import './var';
+
+.btn {
+    background-color: #f2f2f2;
+    color: #757575;
+    border: none;
+    padding: $s-xs $s-l;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: darken($color: #757575, $amount: 80)
+}

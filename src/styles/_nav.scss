@@ -1,11 +1,33 @@
+@import './var';
+
 .nav {
-    grid-area: 1 / 3 / 2 / -1; 
+    text-align: center;
+    background-color: transparent;
+    box-shadow: none;
+    grid-area: 1 / 4 / 2 / -1; 
     transition: all 0.5s;
+    margin-bottom: 1.7rem;
+    display: flex;
+    justify-content: start;
     
-}
+    }
 
 .navOut {
     opacity: 0;
     grid-area: 1 / 3 / 2 / -1; 
     
+}
+
+.nav__item {
+    display: grid;
+    align-content: center;
+    margin-right: 1rem;
+    width: 150px;
+    background-color: $blue;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 1%;
+    box-shadow: 0px 0px 15px -8px rgba(0,0,0,0.75);
 }

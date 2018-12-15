@@ -6,20 +6,20 @@ import { startLogin, startLogout, logout } from '../store/actions/auth'
  const Log = (props) => {
    
   return (
-    <div className={ props.isAuth ? 'login component' : 'loginOut component'}>
+    <div className='login component'>
       {props.isAuth ? 
         <div className="islog">
           <div className="islog__top">
             <p>weight chart</p> 
           </div>
           
-          <div>
-            <button
+          <div className="islog__bot">
+            <button className="btn"
             onClick={() => {
               props.logout()
               props.startLogout()
             }}
-            >logout</button>           
+            >Logout</button>           
           </div>
        
         </div>
@@ -27,7 +27,7 @@ import { startLogin, startLogout, logout } from '../store/actions/auth'
         : 
         <div>
           <p>Start tracking your weight!</p>
-          <button onClick={props.startLogin}>login</button>        
+          <button className="btn" onClick={props.startLogin}>login</button>        
         </div>
 
       }

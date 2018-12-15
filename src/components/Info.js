@@ -34,22 +34,35 @@ class Info extends React.Component {
   render() {
     return (
       <div className="info component">
-        <p>Please, provide those information about you:</p>
+
+        <p className="info__text">Please, provide those information about you:</p>
         <form
+        className="info__form"
         onSubmit={this.onSubmit}
         >
-          <label>Your Age: </label>
-          <input type="age" name="age" value={this.state.age} onChange={this.onChange}/>
-          <label>Your Height: </label>
-          <input type="number" name="height" value={this.state.height} onChange={this.onChange}/>
-          <label>Goal Weight: </label>
-          <input type="number" name="goalWeight" value={this.state.goalWeight} onChange={this.onChange}/>
-          <label>Gender: </label>
-          <select name="gender" value={this.state.gender} onChange={this.onChange}>
-            <option>female</option>
-            <option>male</option>
-          </select>
-          {this.props.info.age ? <button>update</button> : <button>submit</button>}
+          <div>
+            <label>Your Age: </label>
+            <input type="age" name="age" value={this.state.age} onChange={this.onChange}/>
+          </div>
+          <div>
+            <label>Your Height: </label>
+            <input type="number" name="height" value={this.state.height} onChange={this.onChange}/>          
+          </div>
+          <div>
+            <label>Goal Weight: </label>
+            <input type="number" name="goalWeight" value={this.state.goalWeight} onChange={this.onChange}/>
+          </div>
+          <div>
+            <label>Gender: </label>
+            <select name="gender" value={this.state.gender} onChange={this.onChange}>
+              <option>female</option>
+              <option>male</option>
+            </select>          
+          </div>
+
+
+
+          {this.props.info.age ? <button className="btn">update</button> : <button className="btn">submit</button>}
 
         </form>
 

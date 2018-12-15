@@ -1,10 +1,33 @@
+@import './var';
+
 .stats {
-    grid-column: 1 / 3;
+    grid-area: 3 / 1 / 6 / 4;
     transition: all 0.5s;
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr 0.3fr;
+    font-size: $s-m;
+    padding: 0 $s-m;
+
 }
 
 .statsOut {
     opacity: 0;
     grid-column: 1 / 3;
- 
+}
+
+
+
+.stats__good {
+    justify-self: end;
+    color: $green;
+    font-weight: 700;
+}
+.stats__bad {
+    justify-self: end;
+    color: $red;
+    font-weight: 700;
+}
+.stats__neutral {
+    justify-self: end;
+    font-weight: 700;
 }

@@ -1,9 +1,50 @@
-.add {
-    grid-area: 4 / 1 / 7 / 3; 
-    transition: all 0.5s
-}
+@import "./var";
 
+
+.add {
+    grid-area: 6 / 1 / 9 / 4;
+    transition: all 0.5s;
+    display: grid;
+    grid-template-rows: 3rem 1fr;
+
+}
 .addOut {
     opacity: 0;
     grid-area: 4 / 1 / 8 / 3; 
 }
+
+
+.add__top {
+    margin: 2rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: $red;
+    text-transform: uppercase;
+    font-weight: 700;   
+}
+
+.add__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.form__button {
+    align-self: center;
+
+    
+}
+.form__input {
+    align-self: center;
+    margin: 1rem;
+    width: 5.8rem;
+}
+
+.form__date {
+    align-self: center;
+}
+
+
+  

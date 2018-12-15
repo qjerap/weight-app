@@ -18,7 +18,6 @@ class Charts extends React.Component {
 
     render() {
 
-      console.log(this.props.auth)
       return ( 
 
         
@@ -27,10 +26,11 @@ class Charts extends React.Component {
           <LineChart 
             data={this.props.weight}
             suffix="kg"
-            width="1000px"
-            height="400px" 
+            width="55rem"
+            height="30rem" 
             colors={["#F4B400"]}
             curve={false}
+            animation={true}
             min={null} 
             max={null}
           />
