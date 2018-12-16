@@ -10,7 +10,7 @@ import { startLogin, startLogout, logout } from '../store/actions/auth'
       {props.isAuth ? 
         <div className="islog">
           <div className="islog__top">
-            <p>weight chart</p> 
+            <p>weight app</p> 
           </div>
           
           <div className="islog__bot">
@@ -25,9 +25,14 @@ import { startLogin, startLogout, logout } from '../store/actions/auth'
         </div>
 
         : 
-        <div>
-          <p>Start tracking your weight!</p>
-          <button className="btn" onClick={props.startLogin}>login</button>        
+        <div className="islog">
+          <div className="islog__top">
+            <p>weight app</p>
+          </div>
+          <div className="islog__bot">
+            <button className="btn" onClick={props.startLogin}>login</button>              
+          </div>
+    
         </div>
 
       }

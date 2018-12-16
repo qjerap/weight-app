@@ -72,9 +72,9 @@ class Add extends React.Component {
                 className="form__input"
                 onChange={this.onChange}
                 name="weight"
-                type='text' 
+                type='number' 
                 value={this.state.weight} 
-                placeholder='your current weight'
+                
             />
             <button className="btn form__button">submit</button>
         </form>

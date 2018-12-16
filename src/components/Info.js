@@ -33,26 +33,26 @@ class Info extends React.Component {
 
   render() {
     return (
-      <div className="info component">
+      <div className={this.props.auth.uid ? "info component" : 'infoOut'}>
 
         <p className="info__text">Please, provide those information about you:</p>
         <form
         className="info__form"
         onSubmit={this.onSubmit}
         >
-          <div>
-            <label>Your Age: </label>
-            <input type="age" name="age" value={this.state.age} onChange={this.onChange}/>
+          <div className="info__input">
+            <label>Age:</label>
+            <input type="number" name="age" value={this.state.age} onChange={this.onChange}/>
           </div>
-          <div>
-            <label>Your Height: </label>
+          <div className="info__input">
+            <label>Height: </label>
             <input type="number" name="height" value={this.state.height} onChange={this.onChange}/>          
           </div>
-          <div>
+          <div className="info__input">
             <label>Goal Weight: </label>
             <input type="number" name="goalWeight" value={this.state.goalWeight} onChange={this.onChange}/>
           </div>
-          <div>
+          <div className="info__input">
             <label>Gender: </label>
             <select name="gender" value={this.state.gender} onChange={this.onChange}>
               <option>female</option>
@@ -62,7 +62,7 @@ class Info extends React.Component {
 
 
 
-          {this.props.info.age ? <button className="btn">update</button> : <button className="btn">submit</button>}
+          {this.props.info.age ? <button className="btn btn--mt">update</button> : <button className="btn btn--mt">submit</button>}
 
         </form>
 
@@ -77,7 +77,8 @@ const mapDispatchToProps = (dispatch) => ({
 
 const mapStateToProps = (state) => {
   return {
-      info: state.info
+      info: state.info,
+      auth: state.auth
   }
 }
 

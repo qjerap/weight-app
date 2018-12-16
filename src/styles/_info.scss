@@ -2,7 +2,14 @@
     grid-area: 2 / 4 / 9 / -1;
     margin-top: -1rem; 
     display: grid;
-    grid-template-rows: 1fr 3fr 0.5fr;
+    grid-template-rows: 1fr 3fr;
+    transition: all 0.5s;
+}
+
+.infoOut {
+    opacity: 0;
+    grid-area: 2 / 4 / 9 / -1;
+
 }
 
 .info__text {
@@ -13,10 +20,20 @@
 }
 
 .info__form {
+    height: 250px;
     display: grid;
     place-items: center;
 
-    
-
-
 }
+
+.info__input {
+    transform: translateX(-20%);
+    display: grid;
+    grid-template-columns: 150px 100px;
+}
+
+.info__input label {
+    justify-self: end;
+    margin-right: 1rem;
+}
+
